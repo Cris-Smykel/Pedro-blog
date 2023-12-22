@@ -1,0 +1,146 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Nossa comunidade",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/1.jpg",
+      "category": "contabilidade"
+    },
+    {
+      "id": 2,
+      "title": "Minha comunidade comunidade 2",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia.",
+      "imgUrl": "/posts_images/2.jpg",
+      "category": "marketing digital"
+    },
+    {
+      "id": 3,
+      "title": "Nossa comunidade 10",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/3.jpg",
+      "category": "finanças"
+    },
+    {
+      "id": 4,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit.",
+      "imgUrl": "/posts_images/4.jpg",
+      "category": "gestão"
+    },
+    {
+      "id": 5,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/5.jpg",
+      "category": "ferramentas"
+    },
+    {
+      "id": 6,
+      "title": "Nossa comunidade",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/1.jpg",
+      "category": "contabilidade"
+    },
+    {
+      "id": 7,
+      "title": "Minha comunidade comunidade 2",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia.",
+      "imgUrl": "/posts_images/2.jpg",
+      "category": "marketing digital"
+    },
+    {
+      "id": 8,
+      "title": "Nossa comunidade 10",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/3.jpg",
+      "category": "finanças"
+    },
+    {
+      "id": 9,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit.",
+      "imgUrl": "/posts_images/4.jpg",
+      "category": "gestão"
+    },
+    {
+      "id": 10,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/5.jpg",
+      "category": "ferramentas"
+    },
+    {
+      "id": 11,
+      "title": "Nossa comunidade",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/1.jpg",
+      "category": "contabilidade"
+    },
+    {
+      "id": 12,
+      "title": "Minha comunidade comunidade 2",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia.",
+      "imgUrl": "/posts_images/2.jpg",
+      "category": "marketing digital"
+    },
+    {
+      "id": 13,
+      "title": "Nossa comunidade 10",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/3.jpg",
+      "category": "finanças"
+    },
+    {
+      "id": 14,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit.",
+      "imgUrl": "/posts_images/4.jpg",
+      "category": "gestão"
+    },
+    {
+      "id": 15,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/5.jpg",
+      "category": "ferramentas"
+    },
+    {
+      "id": 16,
+      "title": "Nossa comunidade",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/1.jpg",
+      "category": "contabilidade"
+    },
+    {
+      "id": 17,
+      "title": "Minha comunidade comunidade 2",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia.",
+      "imgUrl": "/posts_images/2.jpg",
+      "category": "marketing digital"
+    },
+    {
+      "id": 18,
+      "title": "Nossa comunidade 10",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/3.jpg",
+      "category": "finanças"
+    },
+    {
+      "id": 19,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit.",
+      "imgUrl": "/posts_images/4.jpg",
+      "category": "gestão"
+    },
+    {
+      "id": 20,
+      "title": "Nossa comunidade comunidade comunidade comunidade comunidade 20",
+      "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas inventore adipisci ex, fugit, itaque a, consequuntur soluta vitae voluptatibus quam tenetur eaque quia. Optio, asperiores non fugiat earum libero, provident odio magnam sunt eaque maxime culpa quidem, perspiciatis nostrum vero vel hic. Vel amet deserunt iusto libero? Perferendis, fugit nulla.",
+      "imgUrl": "/posts_images/5.jpg",
+      "category": "ferramentas"
+    }
+  ],
+
+  "status": 200
+}
