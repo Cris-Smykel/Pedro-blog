@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "rgb(28, 44, 64)",
+        secondary: "#203250",
+        customGray: "rgb(204, 204, 204)",
       },
       borderColor: {
         transparent: "rgba(0, 0, 0, 0.1)",
