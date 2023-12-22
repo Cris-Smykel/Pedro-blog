@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         primary: "rgb(28, 44, 64)",
         secondary: "#203250",
+        tertiary: "#384e6e",
         customGray: "rgb(204, 204, 204)",
       },
       borderColor: {
