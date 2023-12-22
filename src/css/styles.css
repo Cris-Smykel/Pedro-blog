@@ -1,3 +1,36 @@
+@import url("./font-awesome.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  text-decoration: none;
+  text-transform: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
+@layer components {
+  .mobile-anchors-container {
+    @apply bg-white absolute top-0 left-[115vw] right-0 min-h-screen flex items-center justify-center p-5 transition-all duration-300;
+  }
+
+  .mobile-anchors-container.active {
+    @apply left-0;
+  }
+
+  .mobile-anchors {
+    @apply flex flex-col;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .custom-right {
+    right: -6rem;
+  }
+}
