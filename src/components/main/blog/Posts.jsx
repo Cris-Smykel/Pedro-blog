@@ -1,47 +1,27 @@
 import { useEffect, useState } from "react";
+import {
+  handleCategoryFilter,
+  getCategories,
+} from "../../../configs/posts/categories";
+import { getPosts } from "../../../configs/posts/posts";
 
 export default function Posts() {
-  const categories = [
-    {
-      id: 1,
-      category: "Contabilidade",
-    },
-    {
-      id: 2,
-      category: "Marketing digital",
-    },
-    {
-      id: 3,
-      category: "Finanças",
-    },
-    {
-      id: 4,
-      category: "Gestão",
-    },
-    {
-      id: 5,
-      category: "Ferramentas",
-    },
-  ];
+  const [categories, setCategories] = useState(() => {
+    return [];
+  });
 
   const [posts, setPosts] = useState(() => []);
 
-  useEffect(() => {
-    async function getPosts() {
-      const postsResponse = await fetch("/data/posts.json");
-      if (!postsResponse.ok) {
-        return;
-      }
-      const postsData = await postsResponse.json();
-      setPosts(() => postsData.posts);
-    }
-
-    getPosts();
-  });
-
   const [maxPosts, setMaxPosts] = useState(() => 5);
-
   const postsElement = [];
+
+  useEffect(() => {
+    getCategories(setCategories);
+  }, []);
+
+  useEffect(() => {
+    getPosts(setPosts, setCategories, setMaxPosts);
+  }, [categories]);
 
   for (let count = 0; count < maxPosts; count++) {
     const post = posts[count];
@@ -61,16 +41,18 @@ export default function Posts() {
     }
   }
 
+  const postsIncrement = 6;
+
   function handleShowMore(maxPosts) {
     if (posts.length > maxPosts) {
-      setMaxPosts((prevMaxPosts) => prevMaxPosts + 6);
+      setMaxPosts((prevMaxPosts) => prevMaxPosts + postsIncrement);
     }
   }
 
   return (
     <section>
       <article className="p-4 md:pl-12 pb-10 md:pr-12 max-w-6xl m-auto flex flex-col gap-8 md:flex-row md:justify-between">
-        <Categories categories={categories} />
+        <Categories categories={categories} setCategories={setCategories} />
 
         <div className="flex flex-col w-full items-center gap-12">
           {posts.length > 0 && (
@@ -100,7 +82,15 @@ export default function Posts() {
 
 function Categories(props) {
   const categoriesElements = props.categories.map((category) => {
-    return <Category key={category.id} category={category.category} />;
+    return (
+      <Category
+        setCategories={props.setCategories}
+        key={category.id}
+        category={category.category}
+        id={category.id}
+        on={category.on}
+      />
+    );
   });
 
   return (
@@ -118,8 +108,11 @@ function Category(props) {
   return (
     <li>
       <button
+        onClick={() => handleCategoryFilter(props.setCategories, props.id)}
         type="button"
-        className="text-primary hover:text-tertiary transition duration-200 text-base font-medium cursor-pointer text-left"
+        className={`text-primary hover:text-tertiary transition duration-200 text-base font-medium cursor-pointer text-left ${
+          props.on && "duration-0 text-blue-900"
+        } `}
       >
         {props.category}
       </button>
