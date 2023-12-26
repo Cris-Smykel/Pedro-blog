@@ -1,5 +1,6 @@
 import Hero from "./blog/Hero";
 import Posts from "./blog/Posts";
+import TimeLine from "./TimeLine";
 
 export default function Main() {
   return (
@@ -7,6 +8,8 @@ export default function Main() {
       <Hero />
 
       <Posts />
+
+      <TimeLine />
     </main>
   );
 }
