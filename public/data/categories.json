@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "category": "Contabilidade",
+    "on": false
+  },
+  {
+    "id": 2,
+    "category": "Marketing digital",
+    "on": false
+  },
+  {
+    "id": 3,
+    "category": "Finanças",
+    "on": false
+  },
+  {
+    "id": 4,
+    "category": "Gestão",
+    "on": false
+  },
+  {
+    "id": 5,
+    "category": "Ferramentas",
+    "on": false
+  }
+]

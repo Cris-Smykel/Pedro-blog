@@ -6,6 +6,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "rgb(28, 44, 64)",
+        secondary: "#203250",
+        tertiary: "#384e6e",
+        customGray: "rgb(204, 204, 204)",
+        textColor: "rgb(153, 153, 153)",
       },
       borderColor: {
         transparent: "rgba(0, 0, 0, 0.1)",

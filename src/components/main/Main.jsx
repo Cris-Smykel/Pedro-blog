@@ -1,9 +1,15 @@
+import Hero from "./blog/Hero";
+import Posts from "./blog/Posts";
+import TimeLine from "./TimeLine";
+
 export default function Main() {
   return (
     <main className="mt-headerHeight">
-      <section>
-        <h1 className="text-6xl text-center text-blue-400">Hello world</h1>
-      </section>
+      <Hero />
+
+      <Posts />
+
+      <TimeLine />
     </main>
   );
 }
