@@ -128,7 +128,7 @@ function Post(props) {
           <img
             src={props.imgUrl}
             alt="Post Cover"
-            className="w-full max-h-96 object-cover lg:h-full rounded-md"
+            className="w-full max-h-96 object-cover lg:min-h-96 lg:min-w-96 rounded-md"
           />
         </picture>
 
@@ -139,10 +139,10 @@ function Post(props) {
         </div>
       </div>
 
-      <article className="flex flex-col justify-center gap-6 p-4 sm:p-7">
+      <article className="flex flex-col justify-center gap-6 p-4 sm:p-7 ">
         <h2 className="text-2xl font-bold text-primary">{props.title}</h2>
 
-        <p className="text-base text-textColor font-normal lg:max-w-[50ch]">
+        <p className="text-base text-textColor font-normal lg:max-w-[50ch] line-clamp-6">
           {props.content}
         </p>
 
