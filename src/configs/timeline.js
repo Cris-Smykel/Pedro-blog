@@ -1,6 +1,8 @@
 async function getTimelineData(setTimelineData) {
   try {
-    const timelineDataResponse = await fetch("/data/posts.json");
+    const timelineDataResponse = await fetch(
+      process.env.PUBLIC_URL + "/data/posts.json"
+    );
 
     if (!timelineDataResponse.ok) {
       return;

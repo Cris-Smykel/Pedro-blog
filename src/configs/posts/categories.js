@@ -14,7 +14,9 @@ function handleCategoryFilter(setCategories, id) {
 
 async function getCategories(setCategories) {
   try {
-    const categoriesResponse = await fetch("/data/categories.json");
+    const categoriesResponse = await fetch(
+      process.env.PUBLIC_URL + "/data/categories.json"
+    );
 
     if (!categoriesResponse.ok) {
       return;
