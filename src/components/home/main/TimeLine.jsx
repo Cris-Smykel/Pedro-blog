@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTimelineData } from "../../configs/timeline";
+import { getTimelineData } from "../../../configs/timeline";
 
 export default function TimeLine() {
   const [timelineData, setTimelineData] = useState(() => []);
