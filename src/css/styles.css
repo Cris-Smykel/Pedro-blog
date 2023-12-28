@@ -27,6 +27,27 @@
   .mobile-anchors {
     @apply flex flex-col;
   }
+
+  .pool-option {
+    @apply transition-all duration-200;
+  }
+
+  .pool-option.active,
+  :hover.pool-option {
+    @apply bg-primary;
+  }
+
+  .pool-option.active p,
+  .pool-option.active mark,
+  :hover.pool-option p,
+  :hover.pool-option mark {
+    @apply text-white transition-all duration-200;
+  }
+
+  .pool-option.active mark,
+  :hover.pool-option mark {
+    @apply border-white;
+  }
 }
 
 @media screen and (min-width: 300px) {

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getPost } from "../../../configs/posts/posts";
+import Pool from "./Pool";
 
 export default function Post() {
   const id = useParams().id;
@@ -29,6 +30,10 @@ export default function Post() {
             {postData.content}
           </p>
         </article>
+
+        <div className="mt-8 pl-2 pr-2 sm:p-0">
+          <Pool pool={postData.pool} setPostData={setPostData} />
+        </div>
       </article>
     </section>
   );
