@@ -126,7 +126,7 @@ function Post(props) {
       <div className="relative">
         <picture>
           <img
-            src={props.imgUrl}
+            src={process.env.PUBLIC_URL + props.imgUrl}
             alt="Post Cover"
             className="w-full max-h-96 object-cover lg:min-h-96 lg:min-w-96 rounded-md"
           />

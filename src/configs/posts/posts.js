@@ -1,6 +1,8 @@
 async function getPosts(setPosts, setCategories, setMaxPosts) {
   try {
-    const postsResponse = await fetch("/data/posts.json");
+    const postsResponse = await fetch(
+      process.env.PUBLIC_URL + "/data/posts.json"
+    );
     if (!postsResponse.ok) {
       return;
     }

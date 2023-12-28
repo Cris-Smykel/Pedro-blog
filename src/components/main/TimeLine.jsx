@@ -101,7 +101,7 @@ function TimeInfo(props) {
 
       <picture className="w-28 z-10">
         <img
-          src={props.imgUrl}
+          src={process.env.PUBLIC_URL + props.imgUrl}
           className="w-28 aspect-square object-cover rounded-full border-secondary border-8"
         />
       </picture>
