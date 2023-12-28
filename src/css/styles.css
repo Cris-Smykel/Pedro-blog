@@ -1,4 +1,5 @@
 @import url("./font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +14,8 @@
   background: none;
   box-shadow: none;
   outline: none;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @layer components {
@@ -26,6 +29,27 @@
 
   .mobile-anchors {
     @apply flex flex-col;
+  }
+
+  .pool-option {
+    @apply transition-all duration-200;
+  }
+
+  .pool-option.active,
+  :hover.pool-option {
+    @apply bg-primary;
+  }
+
+  .pool-option.active p,
+  .pool-option.active mark,
+  :hover.pool-option p,
+  :hover.pool-option mark {
+    @apply text-white transition-all duration-200;
+  }
+
+  .pool-option.active mark,
+  :hover.pool-option mark {
+    @apply border-white;
   }
 }
 

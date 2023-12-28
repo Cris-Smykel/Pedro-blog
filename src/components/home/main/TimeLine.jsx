@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { getTimelineData } from "../../configs/timeline";
+import { getTimelineData } from "../../../configs/timeline";
+import { Link } from "react-router-dom";
 
 export default function TimeLine() {
   const [timelineData, setTimelineData] = useState(() => []);
@@ -25,6 +26,7 @@ export default function TimeLine() {
         content={info.content}
         imgUrl={info.imgUrl}
         datetime={info.datetime}
+        id={info.id}
       />
     );
   });
@@ -38,6 +40,7 @@ export default function TimeLine() {
         content={info.content}
         imgUrl={info.imgUrl}
         datetime={info.datetime}
+        id={info.id}
       />
     );
   });
@@ -91,12 +94,12 @@ function TimeInfo(props) {
           {props.content}
         </p>
 
-        <a
-          href="#"
+        <Link
+          to={`/post/${props.id}`}
           className="font-medium cursor-pointer text-primary hover:text-secondary transition duration-200 text-base"
         >
           Saber mais
-        </a>
+        </Link>
       </article>
 
       <picture className="w-28 z-10">
