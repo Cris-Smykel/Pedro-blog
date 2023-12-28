@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPosts } from "../../../../configs/posts/posts";
+import { Link } from "react-router-dom";
 
 export default function Posts() {
   const [posts, setPosts] = useState(() => []);
@@ -15,6 +16,7 @@ export default function Posts() {
         content={post.content}
         imgUrl={post.imgUrl}
         key={post.id}
+        id={post.id}
       />
     );
   });
@@ -54,13 +56,13 @@ function Post(props) {
           {props.content}
         </p>
 
-        <a
-          href="#"
+        <Link
+          to={`/post/${props.id}`}
           title="Mais informações"
           className="flex items-center gap-2 text-primary focus:text-tertiary hover:text-tertiary transition duration-200 text-base"
         >
           Mais informações <i className="icon-arrow-up-right2"></i>
-        </a>
+        </Link>
       </article>
     </article>
   );
