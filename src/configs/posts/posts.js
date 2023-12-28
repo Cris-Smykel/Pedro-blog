@@ -1,4 +1,4 @@
-async function getPosts(setPosts, setCategories, setMaxPosts) {
+async function getPosts(setPosts) {
   try {
     const postsResponse = await fetch(
       process.env.PUBLIC_URL + "/data/posts.json"
@@ -7,28 +7,9 @@ async function getPosts(setPosts, setCategories, setMaxPosts) {
       return;
     }
     const postsData = await postsResponse.json();
+    let postsToShow = postsData.posts;
 
-    setCategories((prevCategories) => {
-      const categorySelectedData = prevCategories.filter((category) => {
-        return category.on;
-      });
-
-      let postsToShow = postsData.posts;
-
-      if (categorySelectedData.length) {
-        const categorySelected = categorySelectedData[0].category;
-
-        postsToShow = postsToShow.filter((post) => {
-          return post.category.toLowerCase() === categorySelected.toLowerCase();
-        });
-      }
-
-      setPosts(() => postsToShow);
-
-      setMaxPosts(() => 5);
-
-      return prevCategories;
-    });
+    setPosts(() => postsToShow);
   } catch (error) {
     alert(
       "Houve um erro ao mostrar os posts, por favor, tente novamente mais tarde."
