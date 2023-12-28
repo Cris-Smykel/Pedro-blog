@@ -7,7 +7,12 @@ async function getPosts(setPosts) {
       return;
     }
     const postsData = await postsResponse.json();
-    let postsToShow = postsData.posts;
+
+    const maxPosts = 5;
+
+    let postsToShow = postsData.posts.filter((post, index) => {
+      return index < maxPosts;
+    });
 
     setPosts(() => postsToShow);
   } catch (error) {

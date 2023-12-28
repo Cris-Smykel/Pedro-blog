@@ -1,5 +1,6 @@
 import logo from "../assets/logos/logo192.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [navBarOn, setNavBarOn] = useState(() => false);
@@ -18,11 +19,11 @@ export default function Header() {
   return (
     <header className="shadow-md border-b border-transparent bg-white fixed top-0 left-0 right-0 z-20 h-headerHeight">
       <div className="p-6 md:p-10 flex h-full relative items-center justify-between m-auto max-w-screen-xl 2xl:max-w-screen-2xl">
-        <a href="#">
+        <Link to="/">
           <picture>
             <img src={logo} alt="React logo" className="w-14" />
           </picture>
-        </a>
+        </Link>
 
         <NavBar
           handleToggleNavBar={handleToggleNavBar}
